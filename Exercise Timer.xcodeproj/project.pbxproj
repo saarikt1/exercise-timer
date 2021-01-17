@@ -40,7 +40,7 @@
 		342EA9E425B1CF01001B9775 = {
 			isa = PBXGroup;
 			children = (
-				342EA9EF25B1CF01001B9775 /* Exercise Timer */,
+				342EA9EF25B1CF01001B9775 /* exercise-timer */,
 				342EA9EE25B1CF01001B9775 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		342EA9EF25B1CF01001B9775 /* Exercise Timer */ = {
+		342EA9EF25B1CF01001B9775 /* exercise-timer */ = {
 			isa = PBXGroup;
 			children = (
 				342EA9F025B1CF01001B9775 /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				342EA9FB25B1CF02001B9775 /* LaunchScreen.storyboard */,
 				342EA9FE25B1CF02001B9775 /* Info.plist */,
 			);
-			path = "Exercise Timer";
+			path = "exercise-timer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +288,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HTJLKJT8Q;
-				INFOPLIST_FILE = "Exercise Timer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/exercise-timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +308,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HTJLKJT8Q;
-				INFOPLIST_FILE = "Exercise Timer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/exercise-timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

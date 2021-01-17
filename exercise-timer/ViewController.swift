@@ -16,6 +16,8 @@ class MenuButton: UIButton {
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 5
         self.layer.borderColor = UIColor.white.cgColor
+        self.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+        self.widthAnchor.constraint(equalToConstant: 311.0).isActive = true
     }
     
     required init?(coder: NSCoder) {
@@ -40,23 +42,45 @@ class ViewController: UIViewController {
         view.backgroundColor = .black
         
         let topImageContainerView = UIView()
-        topImageContainerView.backgroundColor = .blue
+//        topImageContainerView.backgroundColor = .blue
         view.addSubview(topImageContainerView)
         topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
         topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
         topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
-        let forTimeButton = MenuButton(label: "FOR TIME")
-        view.addSubview(forTimeButton)
-        forTimeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        forTimeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        forTimeButton.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
-        forTimeButton.widthAnchor.constraint(equalToConstant: 311.0).isActive = true
-        
         view.addSubview(logoImageView)
         logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         logoImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
+        
+        let bottomMenuContainerView = UIView()
+//        bottomMenuContainerView.backgroundColor = .darkGray
+        view.addSubview(bottomMenuContainerView)
+        bottomMenuContainerView.translatesAutoresizingMaskIntoConstraints = false
+        bottomMenuContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6).isActive = true
+        bottomMenuContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        bottomMenuContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        bottomMenuContainerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        
+        let restTimerButton = MenuButton(label: "REST TIMER")
+        let forTimeButton = MenuButton(label: "FOR TIME")
+        let amrapButton = MenuButton(label: "AMRAP")
+        let emomButton = MenuButton(label: "EMOM")
+        let tabataButton = MenuButton(label: "TABATA")
+
+        let menuStackView = UIStackView(arrangedSubviews: [restTimerButton, forTimeButton, amrapButton, emomButton, tabataButton])
+        
+        bottomMenuContainerView.addSubview(menuStackView)
+        menuStackView.translatesAutoresizingMaskIntoConstraints = false
+        menuStackView.axis = .vertical
+//        menuStackView.distribution = .equalSpacing
+        menuStackView.spacing = 16
+//        menuStackView.backgroundColor = .systemPink
+//        menuStackView.topAnchor.constraint(equalTo: bottomMenuContainerView.topAnchor, constant: 50).isActive = true
+        menuStackView.bottomAnchor.constraint(equalTo: bottomMenuContainerView.bottomAnchor, constant: -80).isActive = true
+        menuStackView.centerXAnchor.constraint(equalTo: bottomMenuContainerView.centerXAnchor).isActive = true
+
+
     }
     
 }
