@@ -15,6 +15,7 @@
 		342EA9FD25B1CF02001B9775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342EA9FB25B1CF02001B9775 /* LaunchScreen.storyboard */; };
 		34B3BB1E25D687AA00E69DCF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BB1D25D687AA00E69DCF /* R.generated.swift */; };
 		34B3BB2825DABBDB00E69DCF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BB2725DABBDB00E69DCF /* MenuButton.swift */; };
+		34B3BB2C25DABD0600E69DCF /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BB2B25DABD0600E69DCF /* StartScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		342EA9FE25B1CF02001B9775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "exercise-timer/Support files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		34B3BB1D25D687AA00E69DCF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		34B3BB2725DABBDB00E69DCF /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		34B3BB2B25DABD0600E69DCF /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
 		DD9C194F166BD805656C6F1E /* Pods-Exercise Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercise Timer.release.xcconfig"; path = "Target Support Files/Pods-Exercise Timer/Pods-Exercise Timer.release.xcconfig"; sourceTree = "<group>"; };
 		DDC2A7BE570158AFB4DFB494 /* Pods-Exercise Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercise Timer.debug.xcconfig"; path = "Target Support Files/Pods-Exercise Timer/Pods-Exercise Timer.debug.xcconfig"; sourceTree = "<group>"; };
 		E966CF11FB8CCAE5321D523A /* Pods_Exercise_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exercise_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				342EA9F425B1CF01001B9775 /* StartScreenViewController.swift */,
+				34B3BB2B25DABD0600E69DCF /* StartScreenView.swift */,
 				34B3BB2725DABBDB00E69DCF /* MenuButton.swift */,
 				34B3BB0D25D662F500E69DCF /* Support files */,
 			);
@@ -238,6 +241,7 @@
 				342EA9F525B1CF01001B9775 /* StartScreenViewController.swift in Sources */,
 				342EA9F125B1CF01001B9775 /* AppDelegate.swift in Sources */,
 				34B3BB2825DABBDB00E69DCF /* MenuButton.swift in Sources */,
+				34B3BB2C25DABD0600E69DCF /* StartScreenView.swift in Sources */,
 				342EA9F325B1CF01001B9775 /* SceneDelegate.swift in Sources */,
 				34B3BB1E25D687AA00E69DCF /* R.generated.swift in Sources */,
 			);
